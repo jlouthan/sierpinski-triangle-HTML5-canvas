@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>The Sierpinski Triangle</title>
+<link href="css/styles.css" rel="stylesheet"/>
+<style>
+.mainInfo{
+	font-family: 'Pontano Sans', sans-serif;
+}
+.linkEmbed{
+	text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="nav">
+
+<h1><a href="SierpinskiHome.html">the Sierpinski Triangle</a></h1>
+
+<ul>
+<li><a href="sTriangle.html">Sierpinski Triangle<span id="info1">
+The formation of the Sierpinski triangle begins with a single filled triangle. With each iteration, the area of 
+each remaining filled triangle is reduced by 1/4 as the middle interior equilateral triangle is removed. We observe 
+that there are 3^n filled triangles on the nth iteration, each with 1/4 the area of the filled triangles of the 
+previous iteration. Thus the limit of the Sierpinski triangle's area is zero.
+</span></a></li>
+<li><a href="sChaos.html">Chaos Game<span id="info2">
+The Chaos game gives a method for generating arbitrarily close approximations to the Sierpinski triangle. It can
+be described with the following algorithm:
+<br><br>
+1 Begin with three vertices and randomly choose a point X inside the triangle they form. 
+<br><br>
+2 Randomly choose one of the three vertices and draw an imaginary line between X and our random vertex.
+<br><br>
+3 Plot a dot on the midpoint Y of this line. 
+<br> <br>
+4 Let X=Y and go to step 2. Repeat an arbitrarily large number of times.
+</span></a></li>
+<li><a href="sCurve.html">Sierpinski Curve<span id="info3">
+The Sierpinski arrowhead curve is a base-motif fractal identical to the Sierpinski triangle for arbitrarily
+large numbers of iterations. Notice that the length of the one-dimensional curve that forms this fractal is 
+increased by a factor of 3/2 with each iteration. Thus, although it is identical in area and Hausdorff dimension
+to the Sierpinski triangle, the limit of the length of the 
+</span></a></li>
+</ul>
+</div>
+
+ <div class="mainInfo">
+	<p>The Sierpinski triangle-- also called the Sierpinski gasket or Sierpinski sieve-- is a self-similar
+	 fractal appearing 
+	in 13th century Italian art with its formal description attributed to Polish mathematician Waclaw Sierpinski 
+	in 1915. Its <a  class="linkEmbed" href = "http://en.wikipedia.org/wiki/Hausdorff_dimension" target="_blank">Hausdorff 
+	dimension</a> is log(3)/log(2)~1.5848 and its area is zero. In this page, we use interactive animations to examine 
+	the Sierpinski triangle, a stochastic 
+	method for generating arbitrarily close approximations to it, and an identical fractal
+	built with a one-dimensional curve.</p>
+	
+
+</div>    
+
+</div>
+
+</body>
+
+</html>

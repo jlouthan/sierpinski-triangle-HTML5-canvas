@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>The Chaos Game</title>
+<link href="css/styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="nav">
+
+<h1><a href="SierpinskiHome.html">the Sierpinski Triangle</a></h1>
+
+<ul>
+<li><a href="sTriangle.html">Sierpinski Triangle</a></li>
+<li><a href="sChaos.html">Chaos Game<span id="thisPageInfo">
+The Chaos game gives a method for generating arbitrarily close approximations to the Sierpinski triangle. It can
+be described with the following algorithm:
+<br><br>
+1 Begin with three vertices and randomly choose a point X inside the triangle they form. 
+<br><br>
+2 Randomly choose one of the three vertices and draw an imaginary line between X and our random vertex.
+<br><br>
+3 Plot a dot on the midpoint Y of this line. 
+<br> <br>
+4 Let X=Y and go to step 2. Repeat an arbitrarily large number of times.
+
+</span></a></li>
+<li><a href="sCurve.html">Sierpinski Curve</a></li>
+</ul>
+</div>
+
+
+  <section class="fractal">
+    <div>
+        <canvas id="canvas" width="500" height="447">
+         Sorry, your browser 
+         does not support HTML5 Canvas.
+        </canvas>
+    </div>
+    
+    <h2># of points: <span id="iter"></span></h2>
+    
+    <button onclick="clicked()">Pause/Play</button>  
+    <button onclick="resetCanvas()">Reset</button>
+    
+    </section>
+    
+    </div>
+
+<script src="./js/sChaos.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>The Sierpinski Triangle</title>
+<link href="css/styles.css" rel="stylesheet"/>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<div class="nav">
+
+<h1><a href="SierpinskiHome.html">the Sierpinski Triangle</a></h1>
+
+<ul>
+<li><a href="sTriangle.html">Sierpinski Triangle<span id="thisPageInfo">
+
+The formation of the Sierpinski triangle begins with a single filled triangle. With each iteration, the area of 
+each remaining filled triangle is reduced by 1/4 as the middle interior equilateral triangle is removed. We observe 
+that there are 3^n filled triangles on the nth iteration, each with 1/4 the area of the filled triangles of the 
+previous iteration. Thus the limit of the Sierpinski triangle's area is zero.
+
+</span></a></li>
+<li><a href="sChaos.html">Chaos Game</a></li>
+<li><a href="sCurve.html">Sierpinski Curve</a></li>
+</ul>
+</div>
+
+
+  <section class="fractal">
+    <div>
+        <canvas id="canvas" width="500" height="447">
+         Sorry, your browser 
+         does not support HTML5 Canvas.
+        </canvas>
+    </div>
+    
+  <h2>Iteration <span id="iter">none</span></h2>
+  
+      <button onclick="clicked()">Pause/Play</button>  
+      <button onclick="backOne()">Back</button>  
+      <button onclick="draw()">Forward</button>
+      <button onclick="resetCanvas()">Reset</button>
+  
+        </section>
+        
+        <script src="./js/sTriangle.js">
+		</script>
+        
+        </div>
+
+</body>
+
+</html>

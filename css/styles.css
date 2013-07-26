@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+@import url(http://fonts.googleapis.com/css?family=Pontano+San);
+
+
+
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+	font: normal 100% 'Special Elite', cursive;
+}
+
+#info1, #info2, #info3{
+	font-family: 'Pontano Sans', sans-serif;
+	position: absolute;
+	margin-left:-999999em;
+	width: 22.92%;
+	text-align: left;
+}
+
+#thisPageInfo{
+	position: absolute;
+	margin-left:-35%;
+	width:22.92%;
+	text-align: left;
+	font-family: 'Pontano Sans', sans-serif;
+}
+
+.nav{
+	width: 14.58%;
+	margin-left: 26.04%;
+	text-align: right;
+}
+
+h1{
+	margin-bottom: 1.25em;
+	margin-top: 1em;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+
+a:hover{
+	color:#6a5acd;
+}
+
+a:hover #info1, a:hover #info2, a:hover #info3{
+	margin-left:-35%;
+}
+
+a:hover #thisPageInfo{
+		color:#000;
+}
+
+ul{
+	list-style-type: none;
+}
+
+li{
+	margin-bottom: 1.5em;
+}
+
+.fractal, .mainInfo{
+	width: 50%;
+	margin-top: -15em;
+	margin-bottom: 1.5em ;
+	float: right;
+	height: auto;
+}
+
+canvas:hover{
+	cursor: hand;
+	cursor: pointer;
+}
+
+button:hover{
+	cursor: hand;
+	cursor: pointer:
+}
+
+/*change styles for nice look on smaller devices*/
+
+@media screen and (max-width: 600px){
+	.fractal, .mainInfo{
+	width: 100%;
+	margin-top: 0;
+	float: none;
+	}
+	.nav{
+	margin-left: 0;
+	width: 100%;
+	float: none;
+	text-align: left;
+	}
+	.nav ul a{
+	text-decoration: underline;
+	}
+	a:hover #info1, a:hover #info2, a:hover #info3{
+	display: none;
+	}
+	#thisPageInfo{
+	display: none;
+	}
+}
